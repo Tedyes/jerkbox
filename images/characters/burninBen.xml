@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="burninBen.png" width="1041" height="1721">
+	<SubTexture name="Walkin0000" x="833" y="216" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0001" x="1" y="431" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0002" x="209" y="431" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0003" x="417" y="431" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0004" x="625" y="431" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0005" x="833" y="431" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0006" x="1" y="646" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0007" x="209" y="646" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0008" x="417" y="646" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0009" x="625" y="646" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0010" x="833" y="646" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0011" x="1" y="861" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0012" x="1" y="1076" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0013" x="1" y="1291" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0014" x="1" y="1506" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0015" x="209" y="861" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0016" x="417" y="861" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0017" x="625" y="861" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0018" x="833" y="861" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0019" x="209" y="1076" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0020" x="209" y="1291" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0021" x="209" y="1506" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0022" x="417" y="1076" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0023" x="625" y="1076" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0024" x="833" y="1076" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0025" x="417" y="1291" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0026" x="417" y="1506" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0027" x="625" y="1291" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0028" x="625" y="1506" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0029" x="833" y="1291" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Walkin0030" x="417" y="1" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Idle0000" x="417" y="1" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Down0000" x="1" y="1" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Down0001" x="209" y="1" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Left0000" x="625" y="1" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Left0001" x="833" y="1" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Right0000" x="1" y="216" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Right0001" x="209" y="216" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Up0000" x="417" y="216" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+	<SubTexture name="Up0001" x="625" y="216" width="207" height="214" frameX="-24" frameY="-15" frameWidth="239" frameHeight="239"/>
+</TextureAtlas>

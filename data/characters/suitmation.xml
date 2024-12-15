@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="the suitmation trials" scale="0.8" antialiasing="false" camx="-130" camy="65" icon="suitmation" holdTime="2" isGF="false">
+	<anim name="idle" anim="TSTGODZILLA IDLE" x="0" y="0" fps="24" loop="true"/>
+	<anim name="singUP" anim="TSTGODZILLA UP" x="12" y="51" fps="24" loop="false" indices="0,2..15"/>
+	<anim name="singLEFT" anim="TSTGODZILLA LEFT" x="75" y="-24" fps="24" loop="false" indices="0,2..15"/>
+	<anim name="singRIGHT" anim="TSTGODZILLA RIGHT" x="-9" y="-6" fps="24" loop="false" indices="0,2..15"/>
+	<anim name="singDOWN" anim="TSTGODZILLA DOWN" x="-6" y="-18" fps="24" loop="false" indices="0,2..15"/>
+	<anim name="enter" anim="TSTGODZILLA ENTER" x="-5" y="4" fps="24" loop="false"/>
+	<anim name="singUP-alt" anim="TSTGODZILLA ALTUP" x="1" y="12" fps="24" loop="false"/>
+	<anim name="singLEFT-alt" anim="TSTGODZILLA ALTLEFT" x="9" y="2" fps="24" loop="false"/>
+	<anim name="singRIGHT-alt" anim="TSTGODZILLA ALTRIGHT" x="-14" y="11" fps="24" loop="false"/>
+	<anim name="singDOWN-alt" anim="TSTGODZILLA ALTDOWN" x="-1" y="5" fps="24" loop="false"/>
+	<anim name="enter-loop" anim="TSTGODZILLA ENTER" x="-6" y="4" fps="24" loop="true" indices="1"/>
+</character>

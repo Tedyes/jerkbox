@@ -1,0 +1,16 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 153,
+	"difficulties": [
+		"hard"
+	],
+	"needsVoices": false,
+	"parsedColor": -2434342,
+	"displayName": "iron lung",
+	"icon": "rust",
+	"name": "iron-lung",
+	"color": "#DADADA"
+}

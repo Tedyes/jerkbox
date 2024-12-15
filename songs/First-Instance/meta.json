@@ -1,0 +1,10 @@
+{
+	"displayName": "First-Instance",
+	"bpm": 200.0,
+	"difficulties": [
+		"normal"
+	],
+	"icon": "bf",
+	"coopAllowed": false,
+	"opponentModeAllowed": false
+}

@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="2.5" name="suitmation" folder="stages/suitmation/" startCamPosY="550" startCamPosX="950">
+	<dad x = "665" y= "520"/>
+	<boyfriend x = "-4200" y = "76400"/>
+	<combo x = "-4200" y = "76400"/>
+</stage>
