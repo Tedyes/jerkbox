@@ -1,0 +1,14 @@
+{
+	"params": [
+		{
+			"name": "zoom",
+			"type": "String",
+			"defaultValue": 0
+		},
+        {
+            "name": "snap",
+            "type": "Bool",
+            "defaultValue": true
+        }
+	]
+}
