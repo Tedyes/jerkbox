@@ -9,6 +9,15 @@ import funkin.menus.StoryMenuState;
 import funkin.backend.utils.WindowUtils;
 import openfl.Lib;
 import lime.graphics.Image;
+//grabfrombocchithosmodpackTHX!!!
+#if android
+import lime.system.JNI;
+#end
+
+#if android
+public static var setOrientation:Dynamic = JNI.createStaticMethod('org/libsdl/app/SDLActivity', 'setOrientation', '(IIZLjava/lang/String;)V');
+#end
+
 
 function new() {
     windowShit(960,720);
