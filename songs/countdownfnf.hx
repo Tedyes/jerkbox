@@ -7,7 +7,11 @@ function create() {
         var barcam:FlxCamera;
         FlxG.game.addShader(ntsc);
         doIconBop = false;
-        introSounds = ["scrollMenu", "scrollMenu", "scrollMenu", "press_start"];
+        if (PlayState.SONG.meta.displayName == "Quitter"){
+            introSounds = ["oddpetscopintro", "oddpetscopintro", "oddpetscopintro", "oddpetscopintro2"];
+        }else{
+            introSounds = ["petscopintro", "petscopintro", "petscopintro", "petscopintro2"];
+        }
 
         barcam = new FlxCamera();
         barcam.bgColor = 0;
@@ -51,7 +55,7 @@ function onPostCountdown(event) {
             count.cameras = [camUHHHH];
             add(count);
             FlxTween.tween(count, {alpha: 1}, Conductor.crochet / 1000, {onComplete: function() {count.alpha = 0.001;}});
-            if (event.swagCounter == 3){
+            if (event.swagCounter == 3 && PlayState.SONG.meta.displayName != "Quitter"){
                FlxTween.tween(count, {angle: 360}, Conductor.crochet / 1000, {ease: FlxEase.cubeOut});
             }
         }else{
@@ -63,7 +67,9 @@ function onPostCountdown(event) {
             songText.alpha = 0.0001;
             add(songText);
 
-            camUHHHH.flash(FlxColor.WHITE, 0.5);
+            if (PlayState.SONG.meta.displayName != "Quitter"){
+                camUHHHH.flash(FlxColor.WHITE, 0.5);
+            }
             camUHHHH.bgColor = 0;
 
             FlxTween.tween(songText, {alpha: 1}, 1.5, {startDelay: 1,ease: FlxEase.cubeOut,

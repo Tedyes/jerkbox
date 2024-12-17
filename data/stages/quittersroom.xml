@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.7" name="quittersroom" folder="stages/quitter/" funkscopsong="true" >
+    <sprite name="floor" x="-175" y="525" sprite="floor" scale="1"/>
+	<player x="0" y="0"/>
+    <opponent x="-0" y="0"/>
+</stage>
