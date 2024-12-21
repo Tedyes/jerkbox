@@ -7,7 +7,7 @@
 	"difficulties": [
 		"hard"
 	],
-	"needsVoices": false,
+	"needsVoices": true,
 	"parsedColor": -2434342,
 	"displayName": "iron lung",
 	"icon": "rust",

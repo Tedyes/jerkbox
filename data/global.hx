@@ -18,6 +18,10 @@ import lime.system.JNI;
 public static var setOrientation:Dynamic = JNI.createStaticMethod('org/libsdl/app/SDLActivity', 'setOrientation', '(IIZLjava/lang/String;)V');
 #end
 
+static var redirectStates:Map<FlxState, String> = [
+    TitleState => "",
+    MainMenuState => "",
+];
 
 function new() {
     windowShit(960,720);
@@ -47,4 +51,10 @@ public static function windowShit(newWidth:Int, newHeight:Int, scale:Float = 0.9
     ShaderResizeFix.fixSpritesShadersSizes();
     window.x = Capabilities.screenResolutionX/2 - window.width/2;
     window.y = Capabilities.screenResolutionY/2 - window.height/2;
+}
+
+function preStateSwitch() {
+    for (redirectState in redirectStates.keys())
+        if (FlxG.game._requestedState is redirectState)
+            FlxG.game._requestedState = new FreeplayState();
 }

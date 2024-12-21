@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="VHS.png" width="1448" height="2520">
+	<SubTexture name="VHS0000" x="0" y="0" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0001" x="482.5" y="0" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0002" x="965" y="0" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0003" x="0" y="360" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0004" x="482.5" y="360" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0005" x="965" y="360" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0006" x="0" y="720" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0007" x="482.5" y="720" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0008" x="965" y="720" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0009" x="0" y="1080" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0010" x="482.5" y="1080" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0011" x="965" y="1080" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0012" x="0" y="1440" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0013" x="482.5" y="1440" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0014" x="965" y="1440" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0015" x="0" y="1800" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0016" x="482.5" y="1800" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0017" x="965" y="1800" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0018" x="0" y="2160" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0019" x="482.5" y="2160" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+	<SubTexture name="VHS0020" x="965" y="2160" width="482.5" height="360" frameX="-0" frameY="-0" frameWidth="482.5" frameHeight="360"/>
+</TextureAtlas>

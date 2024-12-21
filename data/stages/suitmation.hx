@@ -2,7 +2,6 @@ import flixel.addons.display.FlxBackdrop;
 
 var ntsc = new CustomShader('ntsc');
 function postCreate(){
-    window.frameRate = 48;
     FlxG.game.addShader(ntsc);
     camGame.bgColor = 0;
 
@@ -29,7 +28,6 @@ function onCameraMove(e) {
 
 function destroy(){
     FlxG.game.removeShader(ntsc);
-    window.frameRate = 240;
 }
 
 function onPostStartCountdown(){
@@ -38,7 +36,7 @@ function onPostStartCountdown(){
     FlxG.cameras.add(strumsCam, false);
     strumsCam.downscroll = true;
     
-    bar = new FlxSprite(0,0).loadGraphic(Paths.image("firstbar"));
+    bar = new FlxSprite(0,0).loadGraphic(Paths.image("stages/suitmation/firstbar"));
     add(bar);
     bar.cameras = [strumsCam];
 
@@ -97,7 +95,7 @@ function onNoteCreation(event) {
 	if (!event.cancel) {
 		switch (event.noteType) {
 			default:
-				note.frames = Paths.getFrames('notes firstinstance');
+				note.frames = Paths.getFrames('stages/suitmation/notes firstinstance');
 			switch (event.strumID % 4 ) {
 				case 0:
 					note.animation.addByPrefix('scroll', 'purple0');
@@ -126,7 +124,7 @@ function onStrumCreation(event) {
 	event.cancel();
 	var strum = event.strum;
 	if (!event.cancel) {
-		strum.frames = Paths.getFrames('notes firstinstance');
+		strum.frames = Paths.getFrames('stages/suitmation/notes firstinstance');
 		strum.animation.addByPrefix('green', 'arrowUP');
 		strum.animation.addByPrefix('blue', 'arrowDOWN');
 		strum.animation.addByPrefix('purple', 'arrowLEFT');

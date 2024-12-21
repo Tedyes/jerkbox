@@ -1,0 +1,21 @@
+zoomchange.hx________PACKSEP________function onEvent(_){
+    if (_.event.name == 'zoomchange') {
+        defaultCamZoom += Std.parseFloat(_.event.params[0]);
+        if (_.event.params[1] == true){
+            FlxG.camera.zoom = defaultCamZoom;
+        }
+    }
+}________PACKSEP________{
+	"params": [
+		{
+			"name": "zoom",
+			"type": "String",
+			"defaultValue": 0
+		},
+        {
+            "name": "snap",
+            "type": "Bool",
+            "defaultValue": true
+        }
+	]
+}

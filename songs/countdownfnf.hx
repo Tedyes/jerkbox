@@ -18,7 +18,7 @@ function create() {
         FlxG.cameras.remove(camHUD, false);
         FlxG.cameras.add(barcam, false);
         FlxG.cameras.add(camHUD, false);
-        bar = new FlxSprite().loadGraphic(Paths.image("BLACKBARS"));
+        bar = new FlxSprite().loadGraphic(Paths.image("stages/funkscop/BLACKBARS"));
         bar.cameras = [barcam];
         insert(0,bar);
     }
@@ -84,12 +84,12 @@ function onPostCountdown(event) {
 function onNoteCreation(e){
     if (stage == null || stage.stageXML == null) return;
     if (stage.stageXML.exists("funkscopsong") && stage.stageXML.get("funkscopsong") == "true")
-        e.noteSprite = "NOTE_assets";
+        e.noteSprite = "stages/funkscop/NOTE_assets";
 }
 function onStrumCreation(e){
     if (stage == null || stage.stageXML == null) return;
     if (stage.stageXML.exists("funkscopsong") && stage.stageXML.get("funkscopsong") == "true")
-        e.sprite = "NOTE_assets";
+        e.sprite = "stages/funkscop/NOTE_assets";
 }
 
 function destroy(){
