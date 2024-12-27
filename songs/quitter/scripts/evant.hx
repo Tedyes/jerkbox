@@ -1,5 +1,5 @@
-function create(){
-    c = new CustomShader('adjustColor');//gonnachangeshader
+/* function create(){
+    c = new CustomShader('adjustColor');
     FlxG.game.addShader(c);
 }
 function beatHit(){
@@ -12,4 +12,4 @@ function beatHit(){
 }
 function destroy(){
     FlxG.game.removeShader(c);
-}
+} */
