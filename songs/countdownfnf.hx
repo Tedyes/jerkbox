@@ -1,3 +1,5 @@
+import openfl.filters.ShaderFilter;
+
 public var camUHHHH:FlxCamera;
 var ntsc = new CustomShader('ntsc');
 
@@ -5,7 +7,7 @@ function create() {
     if (stage == null || stage.stageXML == null) return;
     if (stage.stageXML.exists("funkscopsong") && stage.stageXML.get("funkscopsong") == "true"){
         var barcam:FlxCamera;
-        FlxG.game.addShader(ntsc);
+        FlxG.game._filters = [new ShaderFilter(ntsc)];
         doIconBop = false;
         if (PlayState.SONG.meta.displayName == "Quitter"){
             introSounds = ["oddpetscopintro", "oddpetscopintro", "oddpetscopintro", "oddpetscopintro2"];
@@ -93,5 +95,5 @@ function onStrumCreation(e){
 }
 
 function destroy(){
-    FlxG.game.removeShader(ntsc);
+    FlxG.game._filters = [];
 }

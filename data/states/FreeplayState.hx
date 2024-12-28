@@ -5,7 +5,7 @@ import funkin.menus.ModSwitchMenu;
 import funkin.editors.EditorPicker;
 
 function postCreate(){
-	add(versionText = new FunkinText(5, FlxG.height - 2, 0, 'Codename Engine v' + Application.current.meta.get('version') + "\n[ALT] Open Mods menu\n[O] Open Options menu\n[C] Open Credits menu"));
+	add(versionText = new FunkinText(5, FlxG.height - 2, 0, 'Codename Engine v' + Application.current.meta.get('version') + "\n[SHIFT] Open Mods menu\n[O] Open Options menu\n[C] Open Credits menu"));
 	versionText.y -= versionText.height;
 }
 
@@ -16,7 +16,7 @@ function update(){
 		persistentDraw = true;
 		openSubState(new EditorPicker());
 	}
-	if (FlxG.keys.justPressed.ALT) {
+	if (FlxG.keys.justPressed.SHIFT) {
 		openSubState(new ModSwitchMenu());
 		persistentUpdate = false;
 		persistentDraw = true;

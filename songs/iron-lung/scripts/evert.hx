@@ -6,8 +6,8 @@ function postCreate(){
 }
 
 function postUpdate(){
-    iconP2.x += FlxG.random.float(-2.5,2.5)*health;
-    iconP2.y = icony + FlxG.random.float(-2.5,2.5)*health;
+    iconP2.x += FlxG.random.float(-1,1)*health;
+    iconP2.y = icony + FlxG.random.float(-1,1)*health;
 }
 
 function onDadHit(event){

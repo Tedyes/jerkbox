@@ -4,18 +4,16 @@ import openfl.display.BitmapData;
 function create() {
 	transitionTween.cancel();
 	remove(blackSpr);
-    remove(transitionSprite);
-    transitionCamera.scroll.y = 0;
+	remove(transitionSprite);
+	transitionCamera.scroll.y = 0;
+    add(ts = new FlxSprite().loadGraphic(BitmapData.fromImage(FlxG.stage.window.readPixels())));
+	ts.cameras = [transitionCamera];
+    ts.screenCenter();
 
-    FlxG.cameras.add(ah = new HudCamera(), false);
-    ah.bgColor = FlxColor.BLACK;
-
-    if (newState == null){ 
-        FlxTween.tween(ah, {alpha: 0.001}, 0.25);
-    }else{
-        ah.alpha = 0.001;
-        FlxTween.tween(ah, {alpha: 1}, 0.25);
-    }
-
-	new FlxTimer().start(0.25, ()-> {finish();});
+	if(newState == null){
+        ts.flipY = true;
+        FlxTween.tween(ts, {alpha:0}, 0.7, {ease: FlxEase.quartOut});
+	}else{
+		FlxG.switchState(newState);
+	}
 }
