@@ -11,6 +11,8 @@ function postCreate(){
     add(rating = new FlxSprite(0,FlxG.height * 0.5 - 60));
     rating.cameras = [combohud];
     rating.visible = false;
+
+    strumLines.members[0].cpu = false;
 }
 
 function update(){
@@ -18,8 +20,7 @@ function update(){
 }
 
 function onPlayerHit(NoteHitEvent) {
-    if (!NoteHitEvent.note.isSustainNote)
-        num(NoteHitEvent);
+    num(NoteHitEvent);
 }
 
 function num(note){

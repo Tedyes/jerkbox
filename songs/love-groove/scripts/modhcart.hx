@@ -143,7 +143,7 @@ function setupModifiers()
 	");
 
 	createModifier("split", 0, "
-		if (mod(strumID, 2.0) == 0.0)
+		if (strumID * 2.0 > 2.0)
 		{
 			y += (285.0 * split_value);
 			curPos *= 1.0;
@@ -270,6 +270,11 @@ function setupModifiers()
 		eye[2] = mod[MOD_VALUE];
 	}, -1, -1, 0.0, false, MOD_TYPE_CUSTOM);
 
+	createModifier("localrotateZ", 0, "
+		x += (cos(songPosition*0.025 * (1.5 - strumID) * localrotateZ_value * 0.2) - sin(songPosition*0.025 * (1.5 - strumID) * localrotateZ_value * 0.2)) * 112.0*1.5 * localrotateZ_value;
+		y += (sin(songPosition*0.025 * (1.5 - strumID) * localrotateZ_value * 0.2) - cos(songPosition*0.025 * (1.5 - strumID) * localrotateZ_value * 0.2)) * 112.0*1.5 * localrotateZ_value;
+	",-1);
+
 	createModifier("flash", 0.0, "
 		color.rgb = mix(color.rgb, vec3(1.0, 1.0, 1.0), flash_value) * color.a;
 	", -1, -1, 0.0, true, MOD_TYPE_FRAG);
@@ -282,18 +287,15 @@ function setupEvents()
 	setModifierValue("reverseP2",1);
 	ease(0, 1.5,'backOut',"-0.71, camera3DEyeZ");
 
+	var f = false;
 	for (i in 2 ... 30){
-		if (i % 4 == 2 || i % 4 == 1){
+		if (i % 4 == 2 || i % 4 == 1 || i % 4 == 0){
 			set(i, "0.75, scaleX");
 			set(i, "1.25, scaleY");
-			set(i, "25 ,angleZ");
+			var t = (f) ? -25 : 25;
+			set(i, t + " ,angleZ");
 			ease(i, 0.75, 'quadOut', "1, scaleY, 1, scaleX, 0, angleZ");
-		}
-		if (i % 4 == 0){
-			set(i, "0.75, scaleX");
-			set(i, "1.25, scaleY");
-			set(i, "-25 ,angleZ");
-			ease(i, 0.75, 'quadOut', "1, scaleY, 1, scaleX, 0, angleZ");
+			f = !f;
 		}
 	}
 	for (i in 0 ... 4){

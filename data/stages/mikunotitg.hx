@@ -16,7 +16,6 @@ function create(){
 }
 
 function onSongStart(){
-    strumLines.members[0].cpu = false;
     for(c in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, accuracyTxt, missesTxt]){
         remove(c);
     }
