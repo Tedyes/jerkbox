@@ -1,4 +1,5 @@
 import openfl.filters.ShaderFilter;
+import flixel.math.FlxPoint;
 
 var threedeez = new CustomShader('3d');
 var para = new CustomShader('paranoia');
@@ -84,6 +85,10 @@ function setupModifiers()
 
 	createModifier("angleY", 0, "
 		angleY += angleY_value;
+	");
+
+	createModifier("wah", 0, "
+		angleY += songPosition * wah_value;
 	");
 
 	createModifier("angleZ", 0, "
@@ -271,13 +276,23 @@ function setupModifiers()
 	}, -1, -1, 0.0, false, MOD_TYPE_CUSTOM);
 
 	createModifier("localrotateZ", 0, "
-		x += (cos(songPosition*0.025 * (1.5 - strumID) * localrotateZ_value * 0.2) - sin(songPosition*0.025 * (1.5 - strumID) * localrotateZ_value * 0.2)) * 112.0*1.5 * localrotateZ_value;
-		y += (sin(songPosition*0.025 * (1.5 - strumID) * localrotateZ_value * 0.2) - cos(songPosition*0.025 * (1.5 - strumID) * localrotateZ_value * 0.2)) * 112.0*1.5 * localrotateZ_value;
+		x += ((strumID - 1.5) * cos(localrotateZ_value)) - (y * sin(localrotateZ_value));
+		y += ((strumID - 1.5) * sin(localrotateZ_value)) + (y* cos(localrotateZ_value));
 	",-1);
+
+	createModifier("IncomingAngleSmooth", 0.0, "
+		incomingAngleZ -= IncomingAngleSmooth_value + (curPos * 0.015);
+	");
 
 	createModifier("flash", 0.0, "
 		color.rgb = mix(color.rgb, vec3(1.0, 1.0, 1.0), flash_value) * color.a;
 	", -1, -1, 0.0, true, MOD_TYPE_FRAG);
+}
+
+public static function rotate(x:Float, y:Float, angle:Float, ?point:FlxPoint):FlxPoint{
+	var p = point == null ? FlxPoint.weak() : point;
+	p.set((x * Math.cos(angle)) - (y * Math.sin(angle)), (x * Math.sin(angle)) + (y * Math.cos(angle)));
+	return p;
 }
 
 function setupEvents()
@@ -285,7 +300,8 @@ function setupEvents()
 	setModifierValue("camera3DEyeZ",0);
 	setModifierValue("y",260);
 	setModifierValue("reverseP2",1);
-	ease(0, 1.5,'backOut',"-0.71, camera3DEyeZ");
+	setModifierValue("wah",1);
+	ease(0, 1.5,'backOut',"-0.75, camera3DEyeZ");
 
 	var f = false;
 	for (i in 2 ... 30){
@@ -294,9 +310,18 @@ function setupEvents()
 			set(i, "1.25, scaleY");
 			var t = (f) ? -25 : 25;
 			set(i, t + " ,angleZ");
-			ease(i, 0.75, 'quadOut', "1, scaleY, 1, scaleX, 0, angleZ");
+			ease(i, 1, 'quadOut', "1, scaleY, 1, scaleX, 0, angleZ");
 			f = !f;
 		}
+	}
+
+	var a = false;
+	for (i in 2 ... 600){
+		var t = (a) ? -25 : 25;
+		set(i, t + " ,IncomingAngleSmooth");
+		set(i, t + " ,angleX");
+		ease(i, 1, 'backOut',"0, IncomingAngleSmooth,0, angleX");
+		a = !a;
 	}
 	for (i in 0 ... 4){
 		setModifierValue("x"+i,240);
@@ -312,13 +337,34 @@ function setupEvents()
 		ease(30, 1.5,'quadOut',"0, x"+(i+4));
 		ease(82, 0.5,'quadOut',"0, y"+i);
 		ease(82, 0.5,'quadOut',"0, y"+(i+4));
+		ease(98, 0.5,'quadOut',"240, x"+i);
+		ease(98, 0.5,'quadOut',"-240, x"+(i+4));
+		ease(98, 0.5,'quadOut',"-285, y"+i);
+		ease(98, 0.5,'quadOut',"-285, y"+(i+4));
+		ease(99, 0.5,'quadOut',"285, y"+i);
+		ease(99, 0.5,'quadOut',"285, y"+(i+4));
+		ease(99, 0.5,'quadOut',"0, x"+i);
+		ease(99, 0.5,'quadOut',"0, x"+(i+4));
+		ease(114, 0.5,'quadOut',"0, y"+i);
+		ease(114, 0.5,'quadOut',"0, y"+(i+4));
+		ease(115, 0.5,'quadOut',"240, x"+i);
+		ease(115, 0.5,'quadOut',"-240, x"+(i+4));
 	}
 	ease(26, 0.75,'backOut',"0, reverseP2");
 	ease(68, 1,'quadOut',"1, tipsy");
 	ease(83, 0.5,'quadOut',"1, split");
+	ease(98, 0.5,'quadOut',"0, split");
+	ease(98, 0.5,'quadOut',"1, reverseP2");
+	ease(98, 0.5,'quadOut',"1, reverseP1");
+	ease(99, 0.5,'quadOut',"0, reverseP2");
+	ease(99, 0.5,'quadOut',"0, reverseP1");
+	ease(114, 0.5,'quadOut',"0, tipsy");
+	ease(115, 0.5,'quadOut',"1, reverseP2");
+	ease(120, 4,'quadOut',"2" * Math.PI + ", localrotateZ");
 }
 
 function beatHit(){
+	//trace(rotate(10,10,180));
 	switch(curBeat){
 		case 34:
 			FlxTween.num(0,7, 12,{ease: FlxEase.quadOut},function(num) {para.x = num;});

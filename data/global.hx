@@ -9,6 +9,8 @@ import funkin.menus.StoryMenuState;
 import funkin.backend.utils.WindowUtils;
 import openfl.Lib;
 import lime.graphics.Image;
+import funkin.backend.system.framerate.Framerate;
+import openfl.text.TextFormat;
 //grabfrombocchithosmodpackTHX!!!
 #if android
 import lime.system.JNI;
@@ -34,6 +36,11 @@ function destroy(){
 
 function postStateSwitch(){
     windowShit(960,720);
+    Framerate.codenameBuildField.visible = false;
+	Framerate.memoryCounter.memoryText.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);
+	Framerate.memoryCounter.memoryPeakText.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);
+  	Framerate.fpsCounter.fpsNum.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 15, -1);
+  	Framerate.fpsCounter.fpsLabel.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);
 }
 
 var winWidth = Math.floor(Capabilities.screenResolutionX * (3 / 4)) > Capabilities.screenResolutionY ? Math.floor(Capabilities.screenResolutionY * (4 / 3)) : Capabilitities.screenResolutionX;
