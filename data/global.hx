@@ -27,7 +27,7 @@ static var redirectStates:Map<FlxState, String> = [
 ];
 
 function new() {
-    for (i => v in ['songIntro','bad','good']) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
+    //for (i => v in ['songIntro','bad','good']) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
     windowShit(960,720);
     FlxG.stage.window.resizable = false;
 }
