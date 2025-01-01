@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="tomska.png">
+<SubTexture name="tomska idle0000" x="1830" y="0" width="609" height="1080" frameX="-958" frameY="-347" frameWidth="2312" frameHeight="1812" />
+<SubTexture name="tomska idle0001" x="0" y="1156" width="612" height="1071" frameX="-955" frameY="-349" frameWidth="2312" frameHeight="1812" />
+<SubTexture name="tomska idle0002" x="1221" y="0" width="609" height="1129" frameX="-958" frameY="-347" frameWidth="2312" frameHeight="1812" />
+<SubTexture name="tomska idle0003" x="0" y="0" width="612" height="1156" frameX="-955" frameY="-349" frameWidth="2312" frameHeight="1812" />
+<SubTexture name="tomska idle0004" x="612" y="0" width="609" height="1144" frameX="-958" frameY="-347" frameWidth="2312" frameHeight="1812" />
+</TextureAtlas>

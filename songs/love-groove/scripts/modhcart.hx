@@ -87,10 +87,6 @@ function setupModifiers()
 		angleY += angleY_value;
 	");
 
-	createModifier("wah", 0, "
-		angleY += songPosition * wah_value;
-	");
-
 	createModifier("angleZ", 0, "
 		angleZ += angleZ_value;
 	");
@@ -280,10 +276,6 @@ function setupModifiers()
 		y += ((strumID - 1.5) * sin(localrotateZ_value)) + (y* cos(localrotateZ_value));
 	",-1);
 
-	createModifier("IncomingAngleSmooth", 0.0, "
-		incomingAngleZ -= IncomingAngleSmooth_value + (curPos * 0.015);
-	");
-
 	createModifier("flash", 0.0, "
 		color.rgb = mix(color.rgb, vec3(1.0, 1.0, 1.0), flash_value) * color.a;
 	", -1, -1, 0.0, true, MOD_TYPE_FRAG);
@@ -300,7 +292,6 @@ function setupEvents()
 	setModifierValue("camera3DEyeZ",0);
 	setModifierValue("y",260);
 	setModifierValue("reverseP2",1);
-	setModifierValue("wah",1);
 	ease(0, 1.5,'backOut',"-0.75, camera3DEyeZ");
 
 	var f = false;
@@ -314,15 +305,7 @@ function setupEvents()
 			f = !f;
 		}
 	}
-
-	var a = false;
-	for (i in 2 ... 600){
-		var t = (a) ? -25 : 25;
-		set(i, t + " ,IncomingAngleSmooth");
-		set(i, t + " ,angleX");
-		ease(i, 1, 'backOut',"0, IncomingAngleSmooth,0, angleX");
-		a = !a;
-	}
+	
 	for (i in 0 ... 4){
 		setModifierValue("x"+i,240);
 		setModifierValue("x"+(i+4),-240);

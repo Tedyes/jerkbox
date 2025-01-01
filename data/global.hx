@@ -11,6 +11,7 @@ import openfl.Lib;
 import lime.graphics.Image;
 import funkin.backend.system.framerate.Framerate;
 import openfl.text.TextFormat;
+import hxvlc.flixel.FlxVideoSprite;
 //grabfrombocchithosmodpackTHX!!!
 #if android
 import lime.system.JNI;
@@ -26,6 +27,7 @@ static var redirectStates:Map<FlxState, String> = [
 ];
 
 function new() {
+    for (i => v in ['songIntro','bad','good']) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
     windowShit(960,720);
     FlxG.stage.window.resizable = false;
 }
