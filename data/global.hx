@@ -12,6 +12,7 @@ import lime.graphics.Image;
 import funkin.backend.system.framerate.Framerate;
 import openfl.text.TextFormat;
 import hxvlc.flixel.FlxVideoSprite;
+import haxe.io.Path;
 //grabfrombocchithosmodpackTHX!!!
 #if android
 import lime.system.JNI;
@@ -27,7 +28,7 @@ static var redirectStates:Map<FlxState, String> = [
 ];
 
 function new() {
-    //for (i => v in ['songIntro','bad','good']) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
+    for (i => v in ['yoylefake','yoylefakeend']) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
     windowShit(960,720);
     FlxG.stage.window.resizable = false;
 }
@@ -37,7 +38,8 @@ function destroy(){
 }
 
 function postStateSwitch(){
-    windowShit(960,720);
+	windowShit(960,720);
+
     Framerate.codenameBuildField.visible = false;
 	Framerate.memoryCounter.memoryText.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);
 	Framerate.memoryCounter.memoryPeakText.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);

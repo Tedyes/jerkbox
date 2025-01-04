@@ -1,0 +1,17 @@
+{
+	"opponentModeAllowed": false,
+	"icon": "dirtybubble",
+	"difficulties": [
+		"Hard"
+	],
+	"parsedColor": -16777216,
+	"customValues": {},
+	"color": "#835654",
+	"name": "yoylefake",
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"displayName": "Yoylefake",
+	"beatsPerMeasure": 4,
+	"needsVoices": true,
+	"bpm": 173
+}

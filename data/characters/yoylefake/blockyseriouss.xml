@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="yoylefake/serious-blocky" icon="blocky" color="#e84646" x="20" y="400" flipX="true" isPlayer="true" camx="-275" camy="70">
+	<anim name="idle" anim="idle"/>
+	<anim name="singDOWN" anim="down" x="35" y="-35"/>
+	<anim name="singUP" anim="up" x="7" y="71"/>
+	<anim name="miss" anim="miss" x="1" y="-160"/>
+	<anim name="singRIGHT" anim="left" x="54" y="-28"/>
+	<anim name="singLEFT" anim="right" x="127" y="-9"/>
+</character>

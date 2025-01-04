@@ -1,0 +1,19 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.9" name="yoylefake" folder="stages/yoylefake/" funkscopsong="false" >
+    <sprite name="h" x="0" y="100" sprite="happyness" scroll="0.15" scale="3.2"/>
+	<sprite name="bg3" x="500" y="770" sprite="fakeoutsky" scroll="0.95"/>
+	<sprite name="bg4" x="200" y="1370" sprite="fakeout" scroll="0.995"/>
+	<sprite name="fire3" x="250" y="525" sprite="fire" scroll="0.5" scale="3.5" type="loop"/>
+	<sprite name="michael" x="1350" y="900" sprite="michael" scroll="0.75" scale="3" type="onbeat" beatInterval="2"/>
+	<solid name="red" x="-50" y="1500" color="0xD40202" width="3280" height="270"/>
+	<sprite name="table" x="1200" y="1400" sprite="table" scale="0.7"/>
+	<sprite name="p1" x="830" y="1615" sprite="platform"/>
+	<sprite name="p2" x="1910" y="1615" sprite="platform"/>
+
+	<combo x="1935" y="1105"/>
+	<opponent x="895" y="890"/>
+	<player x="1935" y="905"/>
+
+	<sprite name="fire" x="1000" y="1000" sprite="fire" scroll="0.75" scale="3.5" type="loop"/>
+	<solid name="redover" x="0" y="0" color="0xD40202 " width="3280" height="3280"/>
+</stage>

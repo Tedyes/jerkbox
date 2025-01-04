@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="yoylefake/dirtybubbleretro" icon="dirtybubble" color="#835654" x="40" y="400" camx="-280" camy="50">
+	<anim name="singDOWN" anim="down" x="10" y="7"/>
+	<anim name="singUP" anim="up" x="106" y="69"/>
+	<anim name="singRIGHT" anim="right" x="-26" y="52"/>
+	<anim name="singLEFT" anim="left" x="70" y="31"/>
+	<anim name="idle" anim="idle" x="10" y="30" loop="true"/>
+</character>
