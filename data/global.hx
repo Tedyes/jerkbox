@@ -11,6 +11,8 @@ import openfl.Lib;
 import lime.graphics.Image;
 import funkin.backend.system.framerate.Framerate;
 import openfl.text.TextFormat;
+import haxe.io.Path;
+import sys.FileSystem;
 import hxvlc.flixel.FlxVideoSprite;
 
 //grabfrombocchithosmodpackTHX!!!
@@ -27,9 +29,13 @@ static var redirectStates:Map<FlxState, String> = [
     MainMenuState => "",
 ];
 
-static var initialized:Bool = false;
-
 function new() {
+    var vids = FileSystem.readDirectory('./mods/jerkbox/videos');
+    var temp = [];
+    for (i in vids) temp.push(Path.withoutExtension(i));
+    vids = temp;
+    for (i => v in vids) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
+
     windowShit(960,720);
     FlxG.stage.window.resizable = false;
 }
@@ -66,10 +72,6 @@ public static function windowShit(newWidth:Int, newHeight:Int, scale:Float = 0.9
 }
 
 function preStateSwitch() {
-	if (!initialized){
-		initialized = true;
-		FlxG.game._requestedState = new ModState('loadState');
-    }else
     for (redirectState in redirectStates.keys())
         if (FlxG.game._requestedState is redirectState)
             FlxG.game._requestedState = new FreeplayState();

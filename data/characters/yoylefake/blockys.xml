@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-character>
-<character x="20" y="400" sprite="yoylefake/blockyaethosFIRST" flipX="true" camx="-225" camy="70" isPlayer="true" icon="blocky">
+<character x="20" y="400" sprite="yoylefake/blockyaethosFIRST" color="#e84646" flipX="true" camx="-225" camy="70" isPlayer="true" icon="blocky">
 	<anim name="idle" anim="idle" x="0" y="0" fps="24" loop="false"/>
 	<anim name="singDOWN" anim="down" x="-32" y="-32" fps="24" loop="false"/>
 	<anim name="singUP" anim="up" x="438" y="176" fps="24" loop="false"/>
