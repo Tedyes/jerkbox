@@ -12,7 +12,7 @@ import lime.graphics.Image;
 import funkin.backend.system.framerate.Framerate;
 import openfl.text.TextFormat;
 import hxvlc.flixel.FlxVideoSprite;
-import haxe.io.Path;
+
 //grabfrombocchithosmodpackTHX!!!
 #if android
 import lime.system.JNI;
@@ -27,8 +27,9 @@ static var redirectStates:Map<FlxState, String> = [
     MainMenuState => "",
 ];
 
+static var initialized:Bool = false;
+
 function new() {
-    for (i => v in ['yoylefake','yoylefakeend']) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
     windowShit(960,720);
     FlxG.stage.window.resizable = false;
 }
@@ -65,6 +66,10 @@ public static function windowShit(newWidth:Int, newHeight:Int, scale:Float = 0.9
 }
 
 function preStateSwitch() {
+	if (!initialized){
+		initialized = true;
+		FlxG.game._requestedState = new ModState('loadState');
+    }else
     for (redirectState in redirectStates.keys())
         if (FlxG.game._requestedState is redirectState)
             FlxG.game._requestedState = new FreeplayState();
