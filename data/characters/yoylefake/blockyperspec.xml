@@ -1,0 +1,16 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="yoylefake/perspectiveblocky" icon="blocky" color="#e84646" x="90" y="400" flipX="true" isPlayer="true" camx="0" camy="70" holdTime="6.1">
+	<anim name="singDOWN" anim="down" x="15" y="-31"/>
+	<anim name="singUP" anim="up" x="4" y="34"/>
+	<anim name="miss" anim="miss" x="-19" y="-80"/>
+	<anim name="trans" anim="transition" x="260" y="180"/>
+	<anim name="singDOWN-alt" anim="altdown" x="274" y="-20"/>
+	<anim name="singLEFT" anim="left" x="118" y="85"/>
+	<anim name="singRIGHT" anim="right" x="-64" y="65"/>
+	<anim name="idle-alt" anim="altidle" x="0" y="-30" loop="true"/>
+	<anim name="singLEFT-alt" anim="altleft" x="170" y="-30"/>
+	<anim name="singRIGHT-alt" anim="altright" x="170" y="10"/>
+	<anim name="singUP-alt" anim="altup" x="225" y="30"/>
+	<anim name="idle" anim="idle" loop="true"/>
+</character>

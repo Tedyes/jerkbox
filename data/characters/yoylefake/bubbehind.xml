@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
 <!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="yoylefake/bubblebehind" icon="dirtybubble" color="#835654" x="40" y="330" camx="-320" camy="110">
+<character sprite="yoylefake/bubblebehind" icon="dirtybubble" color="#835654" x="875" y="330" camx="-320" camy="110">
 	<anim name="singDOWN" anim="down" x="8" y="25"/>
 	<anim name="singUP" anim="up" x="10" y="46"/>
 	<anim name="idle" anim="idle" x="10" y="30" loop="true"/>

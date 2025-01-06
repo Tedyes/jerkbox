@@ -41,6 +41,11 @@ function doGhostAnim(char:Character, color:FlxColor) {
 		case "singDOWN": FlxTween.tween(trail, {y: trail.y + 50}, 0.5,{ease: FlxEase.circOut});
 		case "singUP": FlxTween.tween(trail, {y: trail.y - 50}, 0.5,{ease: FlxEase.circOut});
 		case "singRIGHT": FlxTween.tween(trail, {x: trail.x + 50}, 0.5,{ease: FlxEase.circOut});
+		
+		case "singLEFT-alt": FlxTween.tween(trail, {x: trail.x - 50}, 0.5,{ease: FlxEase.circOut});
+		case "singDOWN-alt": FlxTween.tween(trail, {y: trail.y + 50}, 0.5,{ease: FlxEase.circOut});
+		case "singUP-alt": FlxTween.tween(trail, {y: trail.y - 50}, 0.5,{ease: FlxEase.circOut});
+		case "singRIGHT-alt": FlxTween.tween(trail, {x: trail.x + 50}, 0.5,{ease: FlxEase.circOut});
 	}
 	return trail;
 }

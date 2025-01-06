@@ -1,6 +1,6 @@
 <!DOCTYPE codename-engine-character>
 <!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
-<character sprite="yoylefake/blockyending" icon="blocky" color="#e8465a" x="60" y="410" flipX="true" camx="-100" camy="70">
+<character sprite="yoylefake/blockyending" icon="blocky" color="#e8465a" x="60" y="410" flipX="true" isPlayer="true" camx="-600" camy="70">
 	<anim name="idle" anim="idle"/>
 	<anim name="singDOWN" anim="down" x="25" y="-33"/>
 	<anim name="singUP" anim="up" x="14" y="43"/>

@@ -1,23 +1,39 @@
 import funkin.backend.utils.ShaderResizeFix;
 import openfl.system.Capabilities;
 import openfl.filters.ShaderFilter;
+import hxvlc.flixel.FlxVideoSprite;
+import haxe.io.Path;
+import sys.FileSystem;
 
 var windowtwn:FlxTween;
+var vidcam:FlxCamera;
 var combohud:HudCamera;
 var other:FlxCamera;
 var forcemove = false;
 var shakey = false;
 var rainShader = new CustomShader('yoylefake/rain');
 var shew = new CustomShader('yoylefake/shew');
+var lava = new CustomShader('yoylefake/lava');
 var time:Float = 0;
+var videos = [];
 
 function create(){
+    var vids = FileSystem.readDirectory('./mods/jerkbox/videos');
+    var temp = [];
+    for (i in vids) temp.push(Path.withoutExtension(i));
+    vids = temp;
+    for (i => v in vids) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
+
     for(i in ['h', 'fire3','fire', 'michael', 'red', 'table', 'p1', 'p2', 'redover', 'center', 'center2', 'center3'])
         stage.getSprite(i).visible = false;
 }
 
 function postCreate(){
     FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.001);
+
+    FlxG.cameras.add(vidcam = new FlxCamera(0, 0, 1280, 720), false);
+    vidcam.bgColor = 0;
+
     FlxG.cameras.add(realhud = new HudCamera(0, 0, 1280, 720), false);
     realhud.bgColor = 0;
     realhud.alpha = 0.001;
@@ -87,7 +103,39 @@ function postCreate(){
     rainShader.uIntensity = 0.2;
 
     stage.getSprite("h").shader = shew;
+
+    add(sing = new FlxVideoSprite()).load(Paths.video("yoylefake"));
+    sing.bitmap.onFormatSetup.add(function():Void
+	{
+	    if (sing.bitmap != null && sing.bitmap.bitmapData != null)
+	    {
+	        sing.cameras = [vidcam];
+            sing.scale.set(0.675,0.675);
+            sing.updateHitbox();
+            videos.push(sing);
+	    }
+	});
+
+    add(ending = new FlxVideoSprite()).load(Paths.video("yoylefakeEnd"));
+    ending.bitmap.onFormatSetup.add(function():Void
+	{
+	    if (ending.bitmap != null && ending.bitmap.bitmapData != null)
+	    {
+	        ending.cameras = [vidcam];
+            ending.scale.set(0.67,0.67);
+            ending.updateHitbox();
+            videos.push(ending);
+	    }
+	});
 }
+
+function onSubstateOpen() 
+    for (v in videos) if (v != null && paused) v.pause();
+
+function onSubstateClose()
+    for (v in videos) if (v != null && paused) v.resume();
+
+function onFocus() { onSubstateOpen(); }
 
 function onStartCountdown(event) {
     event.cancel(true); 
@@ -120,6 +168,7 @@ function postUpdate(elapsed){
     elaptime += elapsed;
     rainShader.data.uCameraBounds.value = [camGame.scroll.x, camGame.scroll.y, camGame.scroll.x + camGame.viewMarginX + camGame.width, camGame.scroll.y + camGame.viewMarginY + camGame.height];
     rainShader.uTime = time;
+    lava.iTime = time;
     rainShader.uIntensity = 0.25;
 
     if (elaptime >= 0.35){
@@ -155,10 +204,15 @@ function postUpdate(elapsed){
 	}
 }
 
+function onCameraMove(e) {
+    if (forcemove)
+        e.cancel();
+}
+
 function onDadHit(e){
     if (shakey){
-        FlxG.camera.shake(0.01,0.1);
-        realhud.shake(0.005,0.1);
+        FlxG.camera.shake(0.0075,0.075);
+        realhud.shake(0.0025,0.075);
         for (i in 0...strumLines.members[0].members.length){
             var nangle = strumLines.members[0].members[i].angle;
             if (nangle > (nangle-3) && nangle < (nangle+3)){
@@ -235,6 +289,7 @@ function beatHit(){
                 stage.getSprite(i).visible = false;
             }
             camGame.setFilters([]);
+            shakey = false;
             for(i in ['bg3', 'bg4']){
                 stage.getSprite(i).visible = true;
                 stage.getSprite(i).color = 0xFF4D2B2E;
@@ -242,11 +297,72 @@ function beatHit(){
             for(c in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, accuracyTxt, missesTxt,timetxt,brothebar,brothedot]){
                 c.alpha = 0.001;
             }
+            strumLines.members[0].visible = false;
+        case 352:
+            stage.getSprite('bg3').visible = false;
+            stage.getSprite("h").visible = true;
         case 384:
+            camHUD.bgColor = 0xFF000000;
+            stage.getSprite('bg4').visible = false;
+            forcemove = true;
+            camFollow.setPosition(1935,1425);
             windowtwn = FlxTween.tween(window, {width: 1280, height: 720}, 0.3 * 10, {ease: FlxEase.quadInOut,onComplete: function() {windowtwn = null;}});
             for (i in 0...strumLines.members[1].members.length)
             {
                 FlxTween.tween(strumLines.members[1].members[i], {x: strumLines.members[1].members[i].x + 225}, 0.3 * 10, {ease: FlxEase.quadInOut});
             }
+        case 400:
+            bars.visible = true;
+            for(c in [iconP1, iconP2, healthBar, healthBarBG, scoreTxt, accuracyTxt, missesTxt,timetxt,brothebar,brothedot]){
+                c.alpha = 1;
+            }
+            for(i in ['center', 'center2', 'center3']){
+                stage.getSprite(i).visible = true;
+            }
+            camHUD.bgColor = 0;
+            stage.getSprite("h").shader = lava;
+        case 461:
+            FlxTween.tween(dad, {alpha: 0}, 0.25, {startDelay: 0.25});
+        case 464:
+            stage.getSprite("red").visible = true;
+            FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom - 0.5}, 1.5, {ease: FlxEase.circOut});
+            FlxTween.tween(camFollow, {x: 1935 - 175}, 1.5, {ease: FlxEase.cubeInOut});
+            FlxTween.tween(camFollow, {y: 1425 - 50}, 2.5, {ease: FlxEase.cubeInOut});
+            defaultCamZoom -= 0.5;
+        case 560:
+            FlxTween.tween(FlxG.camera, {zoom: 1.35}, 12);
+            FlxTween.tween(camFollow, {x: 1935,y: 1425 + 50}, 12.5, {ease: FlxEase.cubeInOut});
+        case 592:
+            camHUD.bgColor = 0xFF000000;
+            FlxTween.tween(realhud, {alpha: 0.001}, 0.75);
+        case 599:
+            sing.play();
+            sing.alpha = 0.001;
+			FlxTween.tween(sing,{alpha: 1},0.75);
+        case 629:
+            FlxTween.tween(realhud, {alpha: 1}, 0.25);
+        case 632:
+            remove(sing, true);
+            shakey = true;
+            forcemove = false;
+            camHUD.bgColor = 0;
+            stage.getSprite("red").visible = false;
+            strumLines.members[0].visible = true;
+            for(i in ['p1', 'p2','fire3','fire']){
+                stage.getSprite(i).visible = true;
+            }
+
+            FlxTween.tween(FlxG.camera, {zoom: 0.575}, 3, {ease: FlxEase.circOut});
+            defaultCamZoom = 0.575;
+        case 727:
+            FlxTween.tween(FlxG.camera, {zoom: 1.5}, 0.5);
+            defaultCamZoom = 1.5;
+            forcemove = true;
+            FlxTween.tween(camFollow, {x: dad.x + 100}, 0.35, {ease: FlxEase.cubeInOut});
+            FlxTween.tween(camFollow, {y: dad.y + 200}, 0.5, {ease: FlxEase.cubeInOut});
+            FlxTween.tween(realhud, {alpha: 0.001}, 0.5);
+        case 728:
+            ythud.visible = false;
+            ending.play();
     }
 }

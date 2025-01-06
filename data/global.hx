@@ -30,12 +30,6 @@ static var redirectStates:Map<FlxState, String> = [
 ];
 
 function new() {
-    var vids = FileSystem.readDirectory('./mods/jerkbox/videos');
-    var temp = [];
-    for (i in vids) temp.push(Path.withoutExtension(i));
-    vids = temp;
-    for (i => v in vids) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
-
     windowShit(960,720);
     FlxG.stage.window.resizable = false;
 }
