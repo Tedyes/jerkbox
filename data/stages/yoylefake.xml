@@ -1,5 +1,5 @@
 <!DOCTYPE codename-engine-stage>
-<stage zoom="0.9" name="yoylefake" folder="stages/yoylefake/" funkscopsong="false" >
+<stage zoom="0.9" name="yoylefake" folder="stages/bfdi/yoylefake/" >
     <sprite name="h" x="0" y="100" sprite="happyness" scroll="0.15" scale="3.2"/>
 	<sprite name="bg3" x="500" y="770" sprite="fakeoutsky" scroll="0.95"/>
 	<sprite name="bg4" x="200" y="1370" sprite="fakeout" scroll="0.995"/>

@@ -1,9 +1,0 @@
-<!DOCTYPE codename-engine-stage>
-<stage zoom="0.7" name="quittersroom" folder="stages/funkscop/quitter/" funkscopsong="true" >
-    <sprite name="floor" x="-175" y="525" sprite="floor" scale="1"/>
-	<player x="0" y="0"/>
-    <opponent x="-0" y="0"/>
-	<sprite name="VHS" x="0" y="0" sprite="VHS" anim="idle" scale="1.95">
-        <anim name="idle" anim="VHS" loop="true" />
-    </sprite>
-</stage>

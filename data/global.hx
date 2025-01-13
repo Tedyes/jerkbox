@@ -40,7 +40,6 @@ function destroy(){
 
 function postStateSwitch(){
 	windowShit(960,720);
-
     Framerate.codenameBuildField.visible = false;
 	Framerate.memoryCounter.memoryText.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);
 	Framerate.memoryCounter.memoryPeakText.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);

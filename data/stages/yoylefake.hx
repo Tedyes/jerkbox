@@ -14,7 +14,7 @@ function create(){
 function update(){
     michael.y += -0.5 * Math.sin((Conductor.songPosition/1500) * (SONG.meta.bpm/120) *0.75);
     fire.alpha = 0.45 + (-0.075 * Math.sin((Conductor.songPosition/300) * (SONG.meta.bpm/30) *1));
-    fire3.alpha = 0.45 + (-0.075 * Math.sin((Conductor.songPosition/400) * (SONG.meta.bpm/60) *1));
+    fire3.alpha = 0.5 + (-0.075 * Math.sin((Conductor.songPosition/400) * (SONG.meta.bpm/60) *1));
 }
 
 function drop(fucker){

@@ -1,0 +1,11 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.25" name="newcomer" folder="stages/newcomer/" >
+	<sprite name="h" x="200" y="-50" sprite="HECOMES"/>
+	<sprite name="v" x="0" y="0" sprite="vignette"/>
+	<opponent x="0" y="350"/>
+	<player x="0" y="0"/>
+	<sprite name="trans" x="500" y="0" sprite="transition" antialiasing="false" scale="4">
+		<anim name="go" anim="caca"/>
+	</sprite>
+	<sprite name="finale" x="150" y="350" sprite="FinalChiyo" scale="2" type="loop"/>
+</stage>

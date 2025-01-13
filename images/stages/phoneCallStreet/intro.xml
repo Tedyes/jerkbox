@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="intro.png" width="1470" height="375">
+	<SubTexture name="intro text0000" x="492.5" y="0" width="492" height="373" frameX="-0" frameY="-0.5" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0001" x="492.5" y="0" width="492" height="373" frameX="-0" frameY="-0.5" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0002" x="492.5" y="0" width="492" height="373" frameX="-0" frameY="-0.5" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0003" x="492.5" y="0" width="492" height="373" frameX="-0" frameY="-0.5" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0004" x="984.5" y="0" width="485.5" height="371.5" frameX="-5" frameY="-1" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0005" x="984.5" y="0" width="485.5" height="371.5" frameX="-5" frameY="-1" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0006" x="984.5" y="0" width="485.5" height="371.5" frameX="-5" frameY="-1" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0007" x="984.5" y="0" width="485.5" height="371.5" frameX="-5" frameY="-1" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0008" x="0" y="0" width="492.5" height="375" frameX="-2" frameY="-0" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0009" x="0" y="0" width="492.5" height="375" frameX="-2" frameY="-0" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0010" x="0" y="0" width="492.5" height="375" frameX="-2" frameY="-0" frameWidth="494.5" frameHeight="375"/>
+	<SubTexture name="intro text0011" x="0" y="0" width="492.5" height="375" frameX="-2" frameY="-0" frameWidth="494.5" frameHeight="375"/>
+</TextureAtlas>

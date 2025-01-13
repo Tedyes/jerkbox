@@ -16,20 +16,15 @@ var shew = new CustomShader('yoylefake/shew');
 var lava = new CustomShader('yoylefake/lava');
 var time:Float = 0;
 var videos = [];
-
+importScript("data/scripts/bfdi/doubles");
 function create(){
-    var vids = FileSystem.readDirectory('./mods/jerkbox/videos');
-    var temp = [];
-    for (i in vids) temp.push(Path.withoutExtension(i));
-    vids = temp;
-    for (i => v in vids) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
-
     for(i in ['h', 'fire3','fire', 'michael', 'red', 'table', 'p1', 'p2', 'redover', 'center', 'center2', 'center3'])
         stage.getSprite(i).visible = false;
 }
 
 function postCreate(){
     FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.001);
+    for (i => v in ['yoylefake','yoylefakeEnd']) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
 
     FlxG.cameras.add(vidcam = new FlxCamera(0, 0, 1280, 720), false);
     vidcam.bgColor = 0;
@@ -47,8 +42,8 @@ function postCreate(){
     ythud.bgColor = 0;
     ythud.downscroll = true;
 
-    add(bars = new FlxSprite(0,0).loadGraphic(Paths.image('stages/yoylefake/bars')));
-    bars.cameras = [camHUD];
+    insert(0,bars = new FlxSprite(0,0).loadGraphic(Paths.image('stages/bfdi/bars')));
+    bars.cameras = [realhud];
     bars.visible = false;
 
     add(text = new FlxText(0, 325, FlxG.width, "BFDI 26: YOYLEFAKE", 0, true).setFormat("fonts/Shag-Lounge.otf", 75, FlxColor.WHITE, "center"));
@@ -61,19 +56,19 @@ function postCreate(){
     add(brothebar = new FlxSprite(0,0).makeSolid(1, 10, 0xFFFF0000));
 	brothebar.cameras = [ythud];
 
-    add(brothedot = new FlxSprite(-10,-5).loadGraphic(Paths.image('stages/yoylefake/reddot')));
+    add(brothedot = new FlxSprite(-10,-5).loadGraphic(Paths.image('stages/bfdi/reddot')));
     brothedot.scale.set(0.5,0.5);
     brothedot.updateHitbox();
 	brothedot.cameras = [ythud];
 
-    insert(0,db = new FlxSprite(1000,125).loadGraphic(Paths.image('stages/yoylefake/dirtybubblerender')));
+    insert(0,db = new FlxSprite(1000,125).loadGraphic(Paths.image('stages/bfdi/yoylefake/dirtybubblerender')));
     db.cameras = [realhud];
     db.scale.set(1.7,1.7);
     db.alpha = 0.001;
 
     insert(1,ezzy = new FlxSprite());
     ezzy.cameras = [realhud];
-    ezzy.frames = Paths.getSparrowAtlas("stages/yoylefake/ezzylogo");
+    ezzy.frames = Paths.getSparrowAtlas("stages/bfdi/yoylefake/ezzylogo");
     ezzy.animation.addByPrefix('idle', 'ezzy', 24, true);
     ezzy.animation.play("idle");
     ezzy.scale.set(0.75,0.75);
@@ -137,23 +132,15 @@ function onSubstateClose()
 
 function onFocus() { onSubstateOpen(); }
 
-function onStartCountdown(event) {
-    event.cancel(true); 
-	startSong();
-	startedCountdown = true;
-	if (startTimer == null)
-		startTimer = new FlxTimer();
-}
-
 function onNoteHit(_){
-    _.ratingPrefix = "stages/yoylefake/";
+    _.ratingPrefix = "stages/bfdi/";
 }
 
 function onNoteCreation(_){
-    _.noteSprite = "stages/yoylefake/NOTE_assets";
+    _.noteSprite = "stages/bfdi/NOTE_assets";
 }
 function onStrumCreation(_){
-    _.sprite = "stages/yoylefake/NOTE_assets";
+    _.sprite = "stages/bfdi/NOTE_assets";
 }
 
 function onPostNoteCreation(_) {
@@ -361,8 +348,12 @@ function beatHit(){
             FlxTween.tween(camFollow, {x: dad.x + 100}, 0.35, {ease: FlxEase.cubeInOut});
             FlxTween.tween(camFollow, {y: dad.y + 200}, 0.5, {ease: FlxEase.cubeInOut});
             FlxTween.tween(realhud, {alpha: 0.001}, 0.5);
+            ythud.fade(0xFFFFFFFF, 0.25);
         case 728:
-            ythud.visible = false;
+            for(i in [ythud,other,realhud]){
+                i.visible = false;
+            }
+            vidcam.bgColor = 0xFFFFFFFF;
             ending.play();
     }
 }

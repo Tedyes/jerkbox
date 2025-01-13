@@ -1,6 +1,0 @@
-<!DOCTYPE codename-engine-stage>
-<stage zoom="1.1" name="benroom" folder="stages/funkscop/benroom/" funkscopsong="true" >
-	<sprite name="bg" x="-250" y="-50" sprite="room" scale="1"/>
-	<opponent x="569" y="145"/>
-	<player x="350" y="100"/>
-</stage>

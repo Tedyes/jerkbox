@@ -1,4 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<character sprite="iron/singit" scale="2" x="425" y="150" camx="25" camy="25" antialiasing="false" color="#DFDFDF" icon="rust" holdTime="6.1">
-	<anim name="anim" anim="singhaha0" x="0" y="0" fps="6" loop="false"/>
-</character>

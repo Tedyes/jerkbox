@@ -1,0 +1,1 @@
+function onNoteHit(event) if (event.noteType == "shakeNote") FlxG.camera.shake(0.0075,0.075); camHUD.shake(0.0025,0.075);

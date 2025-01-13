@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<character x="-95" y="-55" sprite="bbg/transformation" scale="0.9" antialiasing="false" camx="-153" camy="6" icon="sexysans" color="#FFFFFF" holdTime="6.1">
+	<anim name="wink" anim="wink" x="0" y="0" fps="24" loop="true"/>
+	<anim name="cameralook" anim="cameralook" x="0" y="0" fps="24" loop="true"/>
+	<anim name="smile1" anim="smile1" x="140" y="-48" fps="24" loop="true"/>
+	<anim name="hoodieoff" anim="hoodieoff" x="296" y="1" fps="24" loop="true"/>
+	<anim name="talk" anim="talk" x="140" y="-47" fps="7" loop="false"/>
+	<anim name="smile2" anim="smile2" x="0" y="0" fps="1" loop="true"/>
+	<anim name="walk" anim="walk" x="122" y="-36" fps="3" loop="true"/>
+</character>

@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character x="-440" y="-110" sprite="bbg/sexysansmain" scale="0.9" antialiasing="false" camx="-103" camy="16" icon="sexysans" color="#FFFFFF" holdTime="6.1">
+	<anim name="singLEFT" anim="sexy_sans_left" x="-118.56" y="-34.89" fps="12" loop="false"/>
+	<anim name="singDOWN" anim="sexy_sans_down" x="-131.11" y="-25" fps="16" loop="false"/>
+	<anim name="singRIGHT" anim="sexy_sans_right" x="-172.22" y="-35" fps="16" loop="false"/>
+	<anim name="singUP" anim="sexy_sans_up" x="-193.33" y="-17.78" fps="16" loop="false"/>
+	<anim name="idle" anim="sexy_sans_idle" x="-355.56" y="-55.56" fps="16" loop="false"/>
+</character>

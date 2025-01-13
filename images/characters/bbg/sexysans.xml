@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="sexysans.png" width="3877" height="423">
+	<SubTexture name="sexysans idle0000" x="396.5" y="0" width="206" height="387" frameX="-125" frameY="-56.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0001" x="1014.5" y="0" width="206" height="388.5" frameX="-124" frameY="-55" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0002" x="1220.5" y="0" width="205.5" height="389.5" frameX="-123.5" frameY="-54" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0003" x="1631.5" y="0" width="205.5" height="390" frameX="-123" frameY="-53.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0004" x="1837" y="0" width="205.5" height="390" frameX="-123" frameY="-53.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0005" x="1837" y="0" width="205.5" height="390" frameX="-123" frameY="-53.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0006" x="1837" y="0" width="205.5" height="390" frameX="-123" frameY="-53.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0007" x="190.5" y="0" width="206" height="386.5" frameX="-120" frameY="-57" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0008" x="602.5" y="0" width="206" height="387.5" frameX="-120.5" frameY="-56" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0009" x="808.5" y="0" width="206" height="388" frameX="-121" frameY="-55.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0010" x="1426" y="0" width="205.5" height="389.5" frameX="-122" frameY="-54" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0011" x="1837" y="0" width="205.5" height="390" frameX="-123" frameY="-53.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0012" x="1837" y="0" width="205.5" height="390" frameX="-123" frameY="-53.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans idle0013" x="1837" y="0" width="205.5" height="390" frameX="-123" frameY="-53.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans left0000" x="2042.5" y="0" width="207" height="392" frameX="-106.5" frameY="-51.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans left0001" x="2456.5" y="0" width="207.5" height="393.5" frameX="-107.5" frameY="-50" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans left0002" x="3083.5" y="0" width="207" height="395.5" frameX="-109" frameY="-48" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans right0000" x="2249.5" y="0" width="207" height="392" frameX="-168.5" frameY="-48" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans right0001" x="2664" y="0" width="207.5" height="393.5" frameX="-167" frameY="-46.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans right0002" x="3290.5" y="0" width="207" height="395.5" frameX="-166" frameY="-44.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans down0000" x="0" y="0" width="190.5" height="386.5" frameX="-145" frameY="-51.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans down0001" x="3497.5" y="0" width="182.5" height="396.5" frameX="-149" frameY="-41" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans up0000" x="3680" y="0" width="197" height="422.5" frameX="-130.5" frameY="-16.5" frameWidth="450" frameHeight="450"/>
+	<SubTexture name="sexysans up0001" x="2871.5" y="0" width="212" height="395" frameX="-122.5" frameY="-43" frameWidth="450" frameHeight="450"/>
+</TextureAtlas>

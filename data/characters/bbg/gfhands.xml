@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character sprite="bbg/gfhands" flipX="true" antialiasing="false" isPlayer="true" icon="gf" color="#A20023" holdTime="6.1">
+	<anim name="singUP" anim="gfhands up" x="197" y="327" fps="12" loop="false"/>
+	<anim name="idle" anim="gfhands idle" x="195" y="330" fps="12" loop="false"/>
+	<anim name="singRIGHT" anim="gfhands right" x="200" y="330" fps="12" loop="false"/>
+	<anim name="singLEFT" anim="gfhands left" x="195" y="327" fps="12" loop="false"/>
+	<anim name="singDOWN" anim="gfhands down" x="196" y="327" fps="12" loop="false"/>
+</character>

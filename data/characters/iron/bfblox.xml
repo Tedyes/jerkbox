@@ -1,8 +1,0 @@
-<!DOCTYPE codename-engine-character>
-<character sprite="iron/Bf-Rob" y="150" camx="-150" scale="1.25" flipX="true" isPlayer="true" icon="bfblox" color="#1F25A1" holdTime="6.1">
-	<anim name="idle" anim="idle0" x="0" y="0" fps="8" loop="false"/>
-	<anim name="singLEFT" anim="left0" x="0" y="0" fps="8" loop="false"/>
-	<anim name="singRIGHT" anim="right0" x="0" y="0" fps="8" loop="false"/>
-	<anim name="singUP" anim="up0" x="0" y="0" fps="8" loop="false"/>
-	<anim name="singDOWN" anim="down0" x="0" y="0" fps="8" loop="false"/>
-</character>

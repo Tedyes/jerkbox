@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="1.575" name="sexy" folder="stages/sexy/" >
+    <sprite name="g" x="-250" y="-1000" sprite="sexygradient" scale="1.75"/>
+	<combo x="1935" y="1105"/>
+	<opponent x="0" y="-100"/>
+	<player x="-250" y="150"/>
+</stage>

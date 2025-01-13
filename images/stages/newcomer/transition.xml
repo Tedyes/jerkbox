@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="transition.png" width="3520" height="360">
+	<SubTexture name="caca0000" x="3445" y="0" width="74.5" height="57.5" frameX="-98.5" frameY="-225" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0001" x="3445" y="0" width="74.5" height="57.5" frameX="-98.5" frameY="-225" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0002" x="3288" y="0" width="157" height="110" frameX="-70.5" frameY="-203" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0003" x="3288" y="0" width="157" height="110" frameX="-70.5" frameY="-203" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0004" x="2967.5" y="0" width="320.5" height="227" frameX="-0" frameY="-133" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0005" x="2967.5" y="0" width="320.5" height="227" frameX="-0" frameY="-133" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0006" x="2560" y="0" width="407.5" height="318" frameX="-0" frameY="-42" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0007" x="2560" y="0" width="407.5" height="318" frameX="-0" frameY="-42" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0008" x="0" y="0" width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0009" x="0" y="0" width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0010" x="640" y="0" width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0011" x="640" y="0" width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0012" x="1280" y="0" width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0013" x="1280" y="0" width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0014" x="1920" y="0" width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+	<SubTexture name="caca0015" x="1920" y="0" width="640" height="360" frameX="-0" frameY="-0" frameWidth="640" frameHeight="360"/>
+</TextureAtlas>

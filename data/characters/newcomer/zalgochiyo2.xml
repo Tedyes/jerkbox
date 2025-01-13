@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="newcomer/EvilChiyo" camx="-50" antialiasing="false" icon="zalgo" color="#a1a1a1" holdTime="6.1">
+	<anim name="singLEFT" anim="Left"/>
+	<anim name="singDOWN" anim="Down"/>
+	<anim name="singUP" anim="Up"/>
+	<anim name="singRIGHT" anim="Right"/>
+	<anim name="idle" anim="Idle" loop="true"/>
+</character>

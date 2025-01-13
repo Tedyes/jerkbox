@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="newcomer/Osaka" camx="200" camy="150" icon="ayumu" color="#a1a1a1" flipX="true" antialiasing="false" isPlayer="true" holdTime="6.1">
+	<anim name="idle" anim="Idle"/>
+	<anim name="singLEFT" anim="Left"/>
+	<anim name="singDOWN" anim="Down"/>
+	<anim name="singUP" anim="Up"/>
+	<anim name="singRIGHT" anim="Right"/>
+</character>
