@@ -1,0 +1,12 @@
+<!DOCTYPE codename-engine-character>
+<character x="70" y="380" sprite="evilnull2/spiritBack" scale="6" antialiasing="false" camx="100" icon="spirit">
+	<anim name="singDOWN-alt" anim="DirDownAlt0" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT-alt" anim="DirLeftAlt0" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT-alt" anim="DirRightAlt0" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP-alt" anim="DirUpAlt0" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singDOWN" anim="Down0" x="0" y="0" fps="24" loop="false"/>
+	<anim name="idle" anim="Idle0" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="Left0" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="Right0" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singUP" anim="Up0" x="0" y="0" fps="24" loop="false"/>
+</character>

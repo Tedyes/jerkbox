@@ -24,7 +24,6 @@ function create(){
 
 function postCreate(){
     FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.001);
-    for (i => v in ['yoylefake','yoylefakeEnd']) vv = new FlxVideoSprite().load(Assets.getPath(Paths.video(v))); 
 
     FlxG.cameras.add(vidcam = new FlxCamera(0, 0, 1280, 720), false);
     vidcam.bgColor = 0;
@@ -99,7 +98,7 @@ function postCreate(){
 
     stage.getSprite("h").shader = shew;
 
-    add(sing = new FlxVideoSprite()).load(Paths.video("yoylefake"));
+    add(sing = new FlxVideoSprite()).load(Assets.getPath(Paths.file("videos/yoylefake.mp4")));
     sing.bitmap.onFormatSetup.add(function():Void
 	{
 	    if (sing.bitmap != null && sing.bitmap.bitmapData != null)
@@ -111,7 +110,7 @@ function postCreate(){
 	    }
 	});
 
-    add(ending = new FlxVideoSprite()).load(Paths.video("yoylefakeEnd"));
+    add(ending = new FlxVideoSprite()).load(Assets.getPath(Paths.file("videos/yoylefakeEnd.mp4")));
     ending.bitmap.onFormatSetup.add(function():Void
 	{
 	    if (ending.bitmap != null && ending.bitmap.bitmapData != null)

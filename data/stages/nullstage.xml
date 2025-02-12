@@ -1,0 +1,6 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.7" folder="" startCamPosY="550" startCamPosX="600">
+	<use-extension script="pixel"/>
+    <opponent x="400" y="-100"/>
+    <player x="375" y="175"/>
+</stage>
