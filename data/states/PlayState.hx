@@ -8,14 +8,12 @@ function postUpdate() {
     if (startingSong || !canPause || paused || health <= 0) return;
     updateSpeed(FlxG.keys.pressed.TWO);
 
-    if (health > 0.01){
-	    DiscordUtil.changePresenceAdvanced({
-	    	state: (PlayState.instance.paused ? "Paused - " : "") + PlayState.SONG.meta.displayName + ' - ' + Std.int(Std.int((Conductor.songPosition) / 1000) / 60) + ":" + CoolUtil.addZeros(Std.string(Std.int((Conductor.songPosition) / 1000) % 60), 2) + "/" + Std.int(Std.int((PlayState.instance.inst.length) / 1000) / 60) + ":" + CoolUtil.addZeros(Std.string(Std.int((PlayState.instance.inst.length) / 1000) % 60), 2),
-	    	details: 'Score:' + PlayState.instance.songScore + ' | Misses:' + PlayState.instance.misses,
-            largeImageKey: PlayState.SONG.meta.name,
-	    	smallImageKey: "https://media.tenor.com/Iqj4GVV1M4sAAAAj/mizuki-akiyama-mizuki.gif"
-	    });
-    }
+    DiscordUtil.changePresenceAdvanced({
+		state: (PlayState.instance.paused ? "Paused - " : "") + PlayState.SONG.meta.displayName,
+		details: 'Score:' + PlayState.instance.songScore + ' | Misses:' + PlayState.instance.misses,
+        largeImageKey: PlayState.SONG.meta.name,
+		smallImageKey: "https://media.tenor.com/Iqj4GVV1M4sAAAAj/mizuki-akiyama-mizuki.gif"
+	});
 }
 
 function updateSpeed(fast:Bool) {

@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="bfdi/wrongfingerintro" antialiasing="false" scale="1.6">
+	<anim name="canwin" anim="wrongfingerintro umpin" x="0" y="0" indices="0..32"/>
+	<anim name="umpin" anim="wrongfingerintro umpin" x="0" y="0" indices="33..56"/>
+	<anim name="wrong" anim="wrongfingerintro umpin" x="0" y="0" indices="57..65"/>
+	<anim name="finger" anim="wrongfingerintro umpin" x="0" y="0" indices="66,67,69..75"/>
+</character>

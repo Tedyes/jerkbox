@@ -1,0 +1,10 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character isPlayer="true" sprite="bfdi/pinwrongfinger" icon="pin" color="#ff1800" x="20" y="400" camx="-100" camy="70">
+	<anim name="idle" anim="idle" x="-62" y="76"/>
+	<anim name="singDOWN" anim="down" x="-52" y="62"/>
+	<anim name="singUP" anim="up" x="-52" y="93"/>
+	<anim name="singLEFT" anim="right" x="-2" y="83"/>
+	<anim name="singRIGHT" anim="left" x="-60" y="76"/>
+	<anim name="miss" anim="miss" x="-59" y="64"/>
+</character>

@@ -15,15 +15,6 @@ import haxe.io.Path;
 import sys.FileSystem;
 import hxvlc.flixel.FlxVideoSprite;
 
-//grabfrombocchithosmodpackTHX!!!
-#if android
-import lime.system.JNI;
-#end
-
-#if android
-public static var setOrientation:Dynamic = JNI.createStaticMethod('org/libsdl/app/SDLActivity', 'setOrientation', '(IIZLjava/lang/String;)V');
-#end
-
 static var redirectStates:Map<FlxState, String> = [
     TitleState => "",
     MainMenuState => "",

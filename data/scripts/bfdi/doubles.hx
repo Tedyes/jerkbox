@@ -22,7 +22,7 @@ function onNoteHit(event:NoteHitEvent) {
 	target.lastNote.time = event.note.strumTime;
 	target.lastNote.id = event.note.noteData;
 
-	if(doDouble && FlxG.save.data.doubleTrails)
+	if(doDouble)
 		for (character in event.characters)
 			if (character.visible) doGhostAnim(character, target.colors[event.characters.indexOf(character)]).playAnim(character.getAnimName(), true);
 }

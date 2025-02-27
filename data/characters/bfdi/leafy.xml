@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="bfdi/leafywrongfinger" icon="leafy" color="#57c700" x="40" y="370" camx="-120" camy="50" holdTime="5.99999999999999">
+	<anim name="singDOWN" anim="down" x="-18" y="98"/>
+	<anim name="singUP" anim="up" x="-31" y="134"/>
+	<anim name="singRIGHT" anim="right" x="-18" y="102"/>
+	<anim name="singLEFT" anim="left" x="-28" y="120"/>
+	<anim name="idle" anim="idle" x="-30" y="120" loop="true"/>
+</character>

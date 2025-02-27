@@ -5,6 +5,7 @@ import hxvlc.flixel.FlxVideoSprite;
 
 var notehitcreateshit:Bool = true;
 var dadtrail:FlxTrail;
+var mygodstep:Float = 0;
 
 var chroma = new CustomShader("null2/chroma");
 function setChroma(chromeOffset){
@@ -157,6 +158,10 @@ function onDadHit(){
     }
 }
 
+function stepHit(){
+    FlxG.camera.zoom += mygodstep;
+}
+
 function beatHit(){
     switch(curBeat){
         case 64:
@@ -165,6 +170,7 @@ function beatHit(){
         case 70:
             FlxTween.tween(camHUD,  {alpha: 1}, 0.25, {ease: FlxEase.sineInOut});
         case 72:
+            mygodstep = 0.025;
             numBg.visible = true;
             remove(helpme, true);
             notehitcreateshit = false;

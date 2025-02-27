@@ -1,0 +1,7 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="0.75" name="balancebeam" folder="stages/bfdi/wrong/" >
+    <sprite name="b" x="0" y="50" sprite="balance" antialiasing="false"/>
+	<combo x="0" y="0"/>
+	<opponent x="880" y="905" camxoffset="320" camyoffset="5"/>
+	<player x="1495" y="885" camxoffset="-75" camyoffset="0"/>
+</stage>

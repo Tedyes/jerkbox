@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="ourple/ourpgf" icon="ourpgf" color="#d0020a" antialiasing="false" holdTime="6.09999999999999">
+	<anim name="singLEFT" anim="l" x="1" y="0" fps="12" indices="0,1"/>
+	<anim name="singDOWN" anim="d" fps="12" indices="0,1"/>
+	<anim name="singUP" anim="u" fps="12" indices="0,1"/>
+	<anim name="singRIGHT" anim="r" fps="12" indices="0,1"/>
+	<anim name="singLEFTmiss" anim="lm" fps="12" indices="0,1"/>
+	<anim name="singDOWNmiss" anim="dm" fps="12" indices="0,1"/>
+	<anim name="singUPmiss" anim="um" fps="12" indices="0,1"/>
+	<anim name="singRIGHTmiss" anim="rm" fps="12" indices="0,1"/>
+	<anim name="danceRight" anim="i" fps="12" indices="4..7"/>
+	<anim name="danceLeft" anim="i" fps="12" indices="0..3"/>
+</character>

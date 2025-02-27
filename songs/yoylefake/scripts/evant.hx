@@ -4,7 +4,11 @@ import openfl.filters.ShaderFilter;
 import hxvlc.flixel.FlxVideoSprite;
 import haxe.io.Path;
 import sys.FileSystem;
+import flixel.FlxObject;
 
+public var cameraMovementStrength = 2;
+
+public var smoothCamFollow:FlxObject = new FlxObject(0, 0, 2, 2);
 var windowtwn:FlxTween;
 var vidcam:FlxCamera;
 var combohud:HudCamera;
@@ -121,6 +125,9 @@ function postCreate(){
             videos.push(ending);
 	    }
 	});
+
+    add(smoothCamFollow);
+    FlxG.camera.target = smoothCamFollow;
 }
 
 function onSubstateOpen() 
@@ -175,19 +182,16 @@ function postUpdate(elapsed){
         timetxt.text = Std.int(Std.int((Conductor.songPosition) / 1000) / 60) + ":" + CoolUtil.addZeros(Std.string(Std.int((Conductor.songPosition) / 1000) % 60), 2) + "/" + Std.int(Std.int((inst.length) / 1000) / 60) + ":" + CoolUtil.addZeros(Std.string(Std.int((inst.length) / 1000) % 60), 2);
 	}
 
-	if (!forcemove){
-		switch(strumLines.members[curCameraTarget].characters[0].getAnimName()) {
-			case "singLEFT": camFollow.x -= 25;
-			case "singDOWN": camFollow.y += 25;
-			case "singUP": camFollow.y -= 25;
-			case "singRIGHT": camFollow.x += 25;
-	
-			case "singLEFT-alt": camFollow.x -= 25;
-			case "singDOWN-alt": camFollow.y += 25;
-			case "singUP-alt": camFollow.y -= 25;
-			case "singRIGHT-alt": camFollow.x += 25;
-		}
-	}
+    for (i in strumLines.members[curCameraTarget].characters) {
+        smoothCamFollow.x += i.getAnimName() == "singRIGHT" ? cameraMovementStrength : i.getAnimName() == "singLEFT" ? -cameraMovementStrength : 0;
+        smoothCamFollow.y += i.getAnimName() == "singDOWN" ? cameraMovementStrength : i.getAnimName() == "singUP" ? -cameraMovementStrength : 0;
+    }
+}
+
+function update(elapsed:Float) {
+    smoothCamFollow.x = lerp(smoothCamFollow.x, camFollow.x, 0.1 + (2 * Math.pow(FlxMath.bound((smoothCamFollow.x - camFollow.x) / FlxG.width, 0, 1), 1)));
+    smoothCamFollow.y = lerp(smoothCamFollow.y, camFollow.y, 0.1 + (2 * Math.pow(FlxMath.bound((smoothCamFollow.y - camFollow.y) / FlxG.height, 0, 1), 1)));
+    smoothCamFollow.angle = lerp(camGame.angle, camGame.angle, 0.1 + (2 * Math.pow(FlxMath.bound((camGame.angle - camGame.angle) / FlxG.width, 0, 1), 1)));
 }
 
 function onCameraMove(e) {

@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="bopcity/hoodironyFunk" icon="irony" color="#000000" x="-200" y="-210" camx="-250" camy="150" holdTime="4.00000000000001" scale="0.8">
+	<anim name="idle" anim="i"/>
+	<anim name="singLEFT" anim="l" x="11.25" y="2.5" fps="12"/>
+	<anim name="singDOWN" anim="d" x="8.75" y="-2.5" fps="12"/>
+	<anim name="singUP" anim="u" x="-1.25" y="13.75" fps="12"/>
+	<anim name="singRIGHT" anim="r" x="-1.25" y="-1.25" fps="12"/>
+</character>

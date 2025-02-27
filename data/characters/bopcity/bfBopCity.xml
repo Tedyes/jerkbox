@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character isPlayer="true" sprite="bopcity/BC_BF" icon="bopbf" color="#31b0d1" x="100" y="510" flipX="true" camx="180" camy="-140">
+	<anim name="idle" anim="Idle" x="68" y="112"/>
+	<anim name="singLEFT" anim="left" x="141" y="102"/>
+	<anim name="singDOWN" anim="down" x="86" y="51"/>
+	<anim name="singUP" anim="up" x="18" y="320"/>
+	<anim name="singRIGHT" anim="right" x="-46" y="128"/>
+	<anim name="singLEFTmiss" anim="l_miss" x="87" y="-51"/>
+	<anim name="singDOWNmiss" anim="d_miss" x="-15" y="-119"/>
+	<anim name="singUPmiss" anim="u_miss" x="-16" y="7"/>
+	<anim name="singRIGHTmiss" anim="r_miss" x="-125" y="-28"/>
+	<anim name="hey" anim="swag" x="-42" y="114"/>
+</character>

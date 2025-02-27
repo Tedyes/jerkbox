@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="2.5" name="backstage" folder="stages/guy/" >
+    <sprite name="f" x="0" y="0" sprite="backstage" antialiasing="false"/>
+	<combo x="0" y="0"/>
+	<gf x="301" y="163"/>
+	<opponent x="230" y="220" camxoffset="0" camyoffset="-30"/>
+	<player x="472" y="241" camxoffset="-100" camyoffset="-30"/>
+</stage>

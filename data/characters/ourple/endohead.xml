@@ -1,0 +1,9 @@
+<!DOCTYPE codename-engine-character>
+<!-- Made with WizardMantis's Character Converter on https://codename-engine.com/ -->
+<character sprite="ourple/endohead" icon="face" color="#d0020a" antialiasing="false" holdTime="6.09999999999999">
+	<anim name="singDOWN" anim="down" x="0" y="0" fps="30"/>
+	<anim name="singLEFT" anim="left" x="0" y="0" fps="30"/>
+	<anim name="singUP" anim="up" x="0" y="0" fps="30"/>
+	<anim name="singRIGHT" anim="right" x="0" y="0" fps="30"/>
+	<anim name="idle" anim="idle" fps="30"/>
+</character>

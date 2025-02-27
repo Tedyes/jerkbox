@@ -5,6 +5,7 @@ var camCenter = true;
 var force = false;
 var crazy = false;
 var grayLerp:FlxInterpolateColor;
+var healbar:FlxBar;
 var thebgcolor = -1;
 
 function onNoteCreation(_){
@@ -28,6 +29,8 @@ function postCreate(){
     insert(members.indexOf(healthBarBG), healbar = new FlxBar(healthBarBG.x,healthBarBG.y-20, FlxBarFillDirection.RIGHT_TO_LEFT, 602, 49, PlayState.instance, "health", 0, maxHealth));
 	healbar.createImageBar(Paths.image("stages/newcomer/zalgo"),Paths.image("stages/newcomer/ayumu")); 
     healbar.cameras = [camHUD];
+
+    
 
     for(i in [healthBar, healthBarBG]){
         i.alpha = 0.001;
