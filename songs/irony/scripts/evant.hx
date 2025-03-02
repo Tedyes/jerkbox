@@ -18,26 +18,24 @@ function postCreate(){
 
     for (c in [boyfriend, dad]) {
         s = new Shadow(c);
-        s.alpha = 0.85;
+        s.alpha = 0.65;
         s.shader = blur;
         s.matrixExposed = true;
 
         switch(c) {
             case boyfriend:
-                var lol = new FlxMatrix(1, 0, -1.0, 0.6, 175, -980);
+                var lol = new FlxMatrix(1, 0, -1.0, 0.6, 140, -980);
                 s.transformMatrix = lol;
                 s.flipY = false;
 
             case dad: 
                 s.flipY = false;
-                s.transformMatrix = new FlxMatrix(1, 0, 1, 0.6, -350, -2025);
+                s.transformMatrix = new FlxMatrix(1, 0, 1, 0.6, -355, -2025);
         }
     }
 }
 
 function postUpdate(){
-    dad.x += Math.sin(Conductor.songPosition/100);
-    dad.y += Math.cos(Conductor.songPosition/100);
     for (i in strumLines.members[curCameraTarget].characters) {
         if (canMove){
             smoothCamFollow.x += i.getAnimName() == "singRIGHT" ? cameraMovementStrength : i.getAnimName() == "singLEFT" ? -cameraMovementStrength : 0;
