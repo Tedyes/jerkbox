@@ -1,0 +1,8 @@
+<!DOCTYPE codename-engine-character>
+<character camx="-200" camy="150" sprite="marioport/ihy" icon="ihy" color="#009965" holdTime="6.1" scale="0.75" >
+	<anim name="singDOWN" anim="ihy down0" x="196" y="-311" fps="24" loop="false"/>
+	<anim name="idle" anim="ihy idle0" x="0" y="0" fps="24" loop="false"/>
+	<anim name="singLEFT" anim="ihy left0" x="395" y="105" fps="24" loop="false"/>
+	<anim name="singRIGHT" anim="ihy right0" x="-35" y="-110" fps="24" loop="false"/>
+	<anim name="singUP" anim="ihy up0" x="200" y="50" fps="24" loop="false"/>
+</character>

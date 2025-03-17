@@ -21,5 +21,5 @@ function update() {
 }
 function postUpdate() {
     healthBar.unbounded = true;
-    healthBar.percent = CoolUtil.fpsLerp(prevHealthPerc, (health/healthBar.max) * 100, 0.3);
+    healthBar.percent = CoolUtil.fpsLerp(prevHealthPerc, (health/healthBar.max) * 100, 0.25);
 }

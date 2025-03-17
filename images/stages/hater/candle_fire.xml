@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="candle_fire.png" width="3357" height="1725">
+	<SubTexture name="candle0000" x="0" y="898" width="3350" height="358" frameX="-58" frameY="-234" frameWidth="3482" frameHeight="637"/>
+	<SubTexture name="candle0001" x="0" y="898" width="3350" height="358" frameX="-58" frameY="-234" frameWidth="3482" frameHeight="637"/>
+	<SubTexture name="candle0002" x="0" y="1256" width="3350" height="469" frameX="-55" frameY="-121" frameWidth="3482" frameHeight="637"/>
+	<SubTexture name="candle0003" x="0" y="1256" width="3350" height="469" frameX="-55" frameY="-121" frameWidth="3482" frameHeight="637"/>
+	<SubTexture name="candle0004" x="0" y="0" width="3357" height="478" frameX="-54" frameY="-119" frameWidth="3482" frameHeight="637"/>
+	<SubTexture name="candle0005" x="0" y="0" width="3357" height="478" frameX="-54" frameY="-119" frameWidth="3482" frameHeight="637"/>
+	<SubTexture name="candle0006" x="0" y="478" width="3356" height="420" frameX="-56" frameY="-176" frameWidth="3482" frameHeight="637"/>
+	<SubTexture name="candle0007" x="0" y="478" width="3356" height="420" frameX="-56" frameY="-176" frameWidth="3482" frameHeight="637"/>
+</TextureAtlas>

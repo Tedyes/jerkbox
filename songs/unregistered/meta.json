@@ -1,0 +1,16 @@
+{
+	"beatsPerMeasure": 4,
+	"opponentModeAllowed": false,
+	"coopAllowed": false,
+	"stepsPerBeat": 4,
+	"bpm": 128,
+	"difficulties": [
+		"Hard"
+	],
+	"needsVoices": false,
+	"parsedColor": -14876467,
+	"displayName": "Unregistered",
+	"icon": "bluescreen",
+	"name": "unregistered",
+	"color": "#1D00CD"
+}

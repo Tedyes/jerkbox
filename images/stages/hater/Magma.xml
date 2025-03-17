@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="Magma.png" width="9178" height="5461">
+	<SubTexture name="Magma Magma0000" x="0" y="0" width="4510" height="278" frameX="-24" frameY="-74" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0001" x="4510" y="0" width="4513" height="278" frameX="-24" frameY="-74" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0002" x="0" y="834" width="4513" height="303" frameX="-24" frameY="-49" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0003" x="4513" y="834" width="4515" height="303" frameX="-24" frameY="-49" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0004" x="0" y="1137" width="4515" height="313" frameX="-24" frameY="-39" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0005" x="4515" y="1137" width="4503" height="313" frameX="-24" frameY="-39" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0006" x="0" y="1764" width="4503" height="315" frameX="-24" frameY="-37" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0007" x="0" y="2079" width="4584" height="319" frameX="-24" frameY="-33" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0008" x="0" y="1450" width="4589" height="314" frameX="-24" frameY="-38" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0009" x="4589" y="1450" width="4589" height="314" frameX="-24" frameY="-38" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0010" x="0" y="278" width="4503" height="278" frameX="-24" frameY="-74" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0011" x="4503" y="278" width="4507" height="278" frameX="-24" frameY="-74" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0012" x="0" y="556" width="4507" height="278" frameX="-24" frameY="-74" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0013" x="4507" y="556" width="4510" height="278" frameX="-24" frameY="-74" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0014" x="4503" y="3378" width="4552" height="341" frameX="-24" frameY="-11" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0015" x="4503" y="3719" width="4553" height="341" frameX="-24" frameY="-11" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0016" x="0" y="2718" width="4553" height="322" frameX="-24" frameY="-30" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0017" x="0" y="3040" width="4573" height="322" frameX="-24" frameY="-30" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0018" x="0" y="2398" width="4573" height="320" frameX="-24" frameY="-32" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0019" x="4573" y="2398" width="4579" height="321" frameX="-24" frameY="-31" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0020" x="4553" y="2719" width="4579" height="321" frameX="-24" frameY="-31" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0021" x="4584" y="2079" width="4584" height="319" frameX="-24" frameY="-33" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0022" x="0" y="3700" width="4503" height="350" frameX="-24" frameY="-2" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0023" x="0" y="4050" width="4503" height="350" frameX="-24" frameY="-2" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0024" x="0" y="4400" width="4503" height="352" frameX="-24" frameY="-0" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0025" x="4569" y="5109" width="4521" height="352" frameX="-10" frameY="-0" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0026" x="4503" y="4060" width="4521" height="349" frameX="-10" frameY="-3" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0027" x="4576" y="4758" width="4538" height="351" frameX="-2" frameY="-1" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0028" x="0" y="5107" width="4569" height="351" frameX="-2" frameY="-1" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0029" x="4503" y="4409" width="4571" height="349" frameX="-0" frameY="-3" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0030" x="0" y="4758" width="4576" height="349" frameX="-0" frameY="-3" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0031" x="4503" y="1764" width="4503" height="315" frameX="-24" frameY="-37" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0032" x="4573" y="3040" width="4503" height="338" frameX="-24" frameY="-14" frameWidth="4613" frameHeight="352"/>
+	<SubTexture name="Magma Magma0033" x="0" y="3362" width="4503" height="338" frameX="-24" frameY="-14" frameWidth="4613" frameHeight="352"/>
+</TextureAtlas>

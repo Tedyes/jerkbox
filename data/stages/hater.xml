@@ -1,0 +1,13 @@
+<!DOCTYPE codename-engine-stage>
+<stage zoom="1" name="hater" folder="stages/hater/" >
+	<sprite name="back" x="0" y="0" sprite="castle_back" scale="0.75" antialiasing="false"/>
+	<sprite name="backfire" x="185" y="450" sprite="candle_fire" scale="0.75" type="loop"/>
+	<sprite name="lava" x="750" y="950" sprite="Lava" scale="1.5" type="loop"/>
+	<sprite name="bridge" x="0" y="0" sprite="castle_bridge" scale="0.75" antialiasing="false"/>
+
+	<opponent x="1250" y="700" camxoffset="0" camyoffset="-50"/>
+	<player x="2100" y="1000" camxoffset="-250" camyoffset="0"/>
+
+	<sprite name="castlelight" x="0" y="0" sprite="castle_lights" scale="0.75" antialiasing="false"/>
+	<sprite name="lavalight" x="250" y="0" sprite="Lava light" scale="1.5" antialiasing="false"/>
+</stage>

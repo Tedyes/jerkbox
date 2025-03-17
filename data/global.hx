@@ -31,11 +31,6 @@ function destroy(){
 
 function postStateSwitch(){
 	windowShit(960,720);
-    Framerate.codenameBuildField.visible = false;
-	Framerate.memoryCounter.memoryText.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);
-	Framerate.memoryCounter.memoryPeakText.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);
-  	Framerate.fpsCounter.fpsNum.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 15, -1);
-  	Framerate.fpsCounter.fpsLabel.defaultTextFormat = new TextFormat(Paths.getFontName(Paths.font('HummingPro-B.ttf')), 10, -1);
 }
 
 var winWidth = Math.floor(Capabilities.screenResolutionX * (3 / 4)) > Capabilities.screenResolutionY ? Math.floor(Capabilities.screenResolutionY * (4 / 3)) : Capabilitities.screenResolutionX;

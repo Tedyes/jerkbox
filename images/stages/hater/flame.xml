@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="flame.png" width="9960" height="373">
+	<SubTexture name="fire0000" x="0" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0001" x="498" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0002" x="996" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0003" x="1494" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0004" x="1992" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0005" x="2490" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0006" x="2988" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0007" x="3486" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0008" x="3984" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0009" x="4482" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0010" x="4980" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0011" x="5478" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0012" x="5976" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0013" x="6474" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0014" x="6972" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0015" x="7470" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0016" x="7968" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0017" x="8466" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0018" x="8964" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+	<SubTexture name="fire0019" x="9462" y="0" width="498" height="373" frameX="-0" frameY="-0" frameWidth="498" frameHeight="373"/>
+</TextureAtlas>
